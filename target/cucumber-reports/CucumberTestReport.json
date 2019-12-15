@@ -1,0 +1,212 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5261000900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Tekschool page",
+            "match": {
+              "location": "LoginStepDefinations.user_is_on_Tekschool_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1016191500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Click on Test Environment link",
+            "match": {
+              "location": "LoginStepDefinations.user_Click_on_Test_Environment_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8817100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should see Test Environment page",
+            "match": {
+              "location": "LoginStepDefinations.user_should_see_Test_Environment_page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13546978000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "SDET2019AUG_SDET_Register_Form_Test",
+        "description": "",
+        "id": "tek-school-scenarios;sdet2019aug-sdet-register-form-test",
+        "after": [
+          {
+            "result": {
+              "duration": 780207600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 465693500,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User Click on myAccount menu on top of the page",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_Click_on_myAccount_menu_on_top_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 717487600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User click on register on myAccount menu",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_register_on_myAccount_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867243700,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User fill register form with below information",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_fill_register_form_with_below_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Shaiq",
+                  "Darwish",
+                  "beatrice.arnold@sakilacustomer.org",
+                  "2021234455",
+                  "Test123"
+                ],
+                "line": 54
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 562252600,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User click on \u0027no\u0027 radio button for Subscribe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "no",
+                  "offset": 15
+                }
+              ],
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_yes_radio_button_for_Subscribe(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 541929700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User click on continue button",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_click_on_continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 492366300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User should see \u0027Your Account Has Been Created!\u0027",
+            "match": {
+              "location": "TekSchoolScenariosStepDefinitions.user_should_see_Your_Account_Has_Been_Created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 58,
+            "name": "User connects to Database",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 59,
+            "name": "User sends query \u0027select * from public.customer where email\u003d\u0027beatrice.arnold@sakilacustomer.org\u0027\u0027",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "User verify account is created with email \u0027beatrice.arnold@sakilacustomer.org\u0027",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 48,
+            "name": "@SDET_RF_DBV"
+          }
+        ]
+      }
+    ],
+    "name": "Tek School Scenarios",
+    "description": "",
+    "id": "tek-school-scenarios",
+    "keyword": "Feature",
+    "uri": "Features/TekSchoolScenarios.feature"
+  }
+]
